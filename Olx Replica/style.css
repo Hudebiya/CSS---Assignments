@@ -1,0 +1,178 @@
+.main-wrapper {
+  max-width: 1200px;      
+  margin: 0 auto;         
+  padding: 0 15px;         
+}
+
+.sell-btn {
+  font-weight: bold;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #002f34;
+  background-color: rgb(247, 237, 237);
+  border-image: linear-gradient(to right, #3a77ff, #ffce32, #1dbf73) 1;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.sell-btn:hover {
+  background-color: #43474a;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #002f34;
+  text-decoration: none;
+}
+
+.nav-icon img {
+  width: 40px;
+  height: 28px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-pic {
+  width: 50px;
+  height: auto;
+}
+
+.nav-link {
+  color: #002f34 !important;
+  font-weight: 500;
+}
+
+/* Placeholder styling for input field */
+input::placeholder {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Optional: Input field styling for larger screens */
+form input.form-control {
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  color: #333;
+}
+
+.search-btn {
+  background-color: #112247;    
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #2456c8;     
+  color: #fff;
+}
+
+/* Location button matches OLX */
+.dropdown .btn-outline-secondary {
+  font-weight: 500;
+  color: #002f34;
+  border-color: #ced4da;
+}
+
+.dropdown .btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+a.text-dark:hover {
+  text-decoration: underline;
+  color: #3a77ff;
+}
+
+a:hover p {
+  text-decoration: underline;
+  color: #3a77ff;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.btn-light:hover {
+  background-color: #f0f0f0;
+}
+
+.bi-heart {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer {
+  font-size: 14px;
+  background-color: #e8f1f2;
+  color: #000;
+}
+
+.footer-link {
+  color: #abb0c0;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #445370;
+}
+
+.footer h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#goTopBtn {
+  font-size: 18px;
+  background-color: #002f34;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+#goTopBtn:hover {
+  background-color: #005e6b;
+}
+
+@media (max-width: 991.98px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+}

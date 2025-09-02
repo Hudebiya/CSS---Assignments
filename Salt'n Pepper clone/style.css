@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar .logo img {
+  height: 65px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e4002b;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  background-color: #080808;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: white;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* CARDS SECTION */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  padding: 60px 20px 80px;
+  background-color: #000;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card .btn {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* FRANCHISE SECTION */
+.franchise,
+.express-franchises,
+.village-franchise,
+.opening-soon {
+  padding: 60px 20px;
+  background-color: #000;
+  background-image: url("https://saltnpepper.com.pk/images/bg-pattern.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+/* FRANCHISE COMMON STYLES */
+.franchise-heading,
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: #e4002b;
+}
+
+.franchise-sub {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.franchise-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.franchise-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.franchise-img {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.franchise-img img {
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+}
+
+.franchise-text {
+  flex: 1 1 45%;
+}
+
+.franchise-text h3 {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.franchise-text h3 span {
+  color: #e4002b;
+}
+
+.franchise-text p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* EXPRESS FRANCHISE GRID */
+.express-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.express-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.express-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.express-item h3 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.express-item p {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.express-item .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* VILLAGE FRANCHISE */
+.village-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.village-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.village-text {
+  max-width: 500px;
+}
+
+.village-text h3 {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.village-text p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* OPENING SOON GRID */
+.opening-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.opening-item {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.opening-item h3 {
+  font-size: 20px;
+  color: #e4002b;
+  margin-bottom: 10px;
+}
+
+.opening-item p {
+  font-size: 16px;
+  color: #ccc;
+}
+.site-footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 60px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #e4002b;
+}
+
+.footer-col p,
+.footer-col li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.legal-links {
+  margin-top: 10px;
+  color: #888;
+  font-size: 13px;
+}
+
+.store-logos img {
+  width: 130px;
+  margin: 10px 5px 0 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #000;
+}
+.card {
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card h2 {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-top: auto;
+}
+.card .plus-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background-color: #e4002b;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .plus-icon:hover {
+  background-color: #c10026;
+}
+
+.product-detail-section {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.product-desc {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) { 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .franchise-row,
+  .franchise-row.reverse,
+  .village-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .franchise-img,
+  .franchise-text,
+  .village-text {
+    max-width: 100%;
+  }
+
+  .express-grid {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .store-logos img {
+    width: 120px;
+    margin: 10px auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+}

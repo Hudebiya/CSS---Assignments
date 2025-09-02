@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+  width: 1440;
+  height: 174;
+  opacity: 1;
+
+}
+.btn-nav {
+  background: #75BF7A;
+  border: 1px;
+  border-radius: 5px;  
+}
+
+.fw-bold {
+    font-size: 50px;
+    width: 557;
+    height: 198;
+    opacity: 1;
+    top: 337px;
+    left: 80px;
+}
+
+.mt-3 {
+    font-size: 30px;
+    width: 550;
+    height: 120;
+    opacity: 1;
+    top: 562px;
+    left: 80px;
+}
+
+.img-fluid {
+  width: 553;
+  height: 582.81298828125;
+  opacity: 1;
+  top: 228.83px;
+  left: 740px;
+}
+
+.btn-lg {
+  width: 260;
+  height: 67;
+  opacity: 1;
+  top: 744px;
+  left: 370px;
+  background-color: black;
+}
+
+/* Form Box Container */
+.request-box {
+  background: #75BF7A;
+  gap: 20px;
+  border-radius: 8px; /* 💡 Light curve only */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Text */
+.left-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+/* Input Field */
+.input-box input {
+  width: 300px;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Button */
+.button-box .btn {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+/* How tree works  */
+ .how-tere-works {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.how-tere-works h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-tere-works h2 span {
+  color: #75BF7A;
+}
+
+.how-tere-works p {
+  color: #888;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* Wrapper for circle and cards */
+.how-works-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;
+  padding: 100px 0;
+}
+
+/* Green circle background */
+.circle-bg {
+  width: 400px;
+  height: 400px;
+  background: #75BF7A;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Common card style */
+.card {
+  width: 250px;
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Number circle inside card */
+.card .number {
+  width: 50px;
+  height: 50px;
+  background-color: #75BF7A;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #000;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Card positions */
+.left.top {
+  top: 10%;
+  left: 5%;
+  transform: translate( 20%);
+}
+
+.right.top {
+  top: 10%;
+  right: 10%;
+  transform: translate(20%);
+}
+
+.left.bottom {
+  bottom: 10%;
+  left: 5%;
+  transform: translate(20%);
+}
+
+.right.bottom {
+  bottom: 10%;
+  right: 10%;
+  transform: translate(20%);
+} 
+
+/* Tere Benefits */
+  .tere-benefits {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.benefit-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.benefit-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-text {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.benefit-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.benefit-text h2 span {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.benefit-text p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.benefit-image {
+  flex: 1;
+  text-align: center;
+}
+
+.benefit-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile background for 3rd card */
+.mobile-bg {
+  position: relative;
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.mobile-bg::before {
+  content: "";
+  background: url('assets/mobile\ img.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+
+
+/* Responsive: Stack items on small screens */
+@media (max-width: 768px) {
+  .request-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .benefit-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .benefit-card.reverse {
+    flex-direction: column;
+  }
+
+  .benefit-text, .benefit-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .benefit-text h2 {
+    font-size: 24px;
+  }
+
+  .benefit-text p {
+    font-size: 16px;
+  }
+
+}

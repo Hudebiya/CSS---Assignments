@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.form-background {
+  background-image: url('https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding: 40px 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box {
+  background-color: rgba(69, 85, 78, 0.85);
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+.field {
+  width: 100%;
+  padding: 10px 10px;
+  border: 2px solid #626d67;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background-color: white;
+  color: black;
+}
+
+.field:focus {
+  border-color: #8cca9f;
+  outline: none;
+}
+
+.icon-email {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/561/561127.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+}
+
+.icon-phone {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/455/455705.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #579673;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+button[type="submit"]:hover {
+  background-color: #023112;
+}
+
+.switch-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.switch-link a {
+  color: #8cca9f;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}

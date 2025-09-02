@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="main-wrapper">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
+    <div class="container-fluid">
+      <!-- Left section: OLX + Motors + Property -->
+      <div class="d-flex align-items-center nav-left">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="assets/OLX_New_Logo.png" alt="OLX Logo" class="logo-pic" />
+        </a>
+        <a class="nav-icon" href="#">
+          <img src="assets/car pic.png" alt="Motors" /> Motors
+        </a>
+        <a class="nav-icon" href="#">
+          <img src="assets/house pic.png" alt="Property" /> Property
+        </a>
+      </div>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Right section: Login + Sell -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <div class="nav-right ms-auto">
+          <a class="nav-link" href="#"> Login </a>
+          <a href="#" class="sell-btn"> + SELL </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+     
+ <!-- OLX 2nd Navbar -->
+<div class="bg-light py-2">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center g-2">
+
+      <!-- Location Dropdown -->
+      <div class="col-md-3 col-lg-2">
+        <div class="dropdown w-100">
+          <button class="btn btn-outline-secondary w-100 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown">
+            <i class="bi bi-geo-alt"></i> Lahore
+          </button>
+          <ul class="dropdown-menu w-100">
+            <li><a class="dropdown-item" href="#">Karachi</a></li>
+            <li><a class="dropdown-item" href="#">Islamabad</a></li>
+            <li><a class="dropdown-item" href="#">Multan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Search Input and Button -->
+     <div class="col-md-9 col-lg-10">
+       <form class="d-flex w-100" role="search">
+          <input class="form-control form-control-lg me-2" type="search" placeholder="Find Cars, Mobile Phones and more..." aria-label="Search">
+    
+     <button class="btn search-btn btn-lg" type="submit">
+        <i class="bi bi-search me-2"></i> Search
+      </button>
+     </form>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- All Categories -->
+<div class="container-fluid px-4 py-2 border-top border-bottom bg-white">
+  <div class="d-flex flex-wrap align-items-center gap-3">
+
+    <!-- All Categories Dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown">
+        All Categories
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Jobs</a></li>
+        <li><a class="dropdown-item" href="#">Services</a></li>
+        <li><a class="dropdown-item" href="#">Furniture</a></li>
+        <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+        <li><a class="dropdown-item" href="#">Tablets</a></li>
+        <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+        <li><a class="dropdown-item" href="#">Cars</a></li>
+        <li><a class="dropdown-item" href="#">Houses</a></li>
+        <li><a class="dropdown-item" href="#">Land & Plots</a></li>
+        <li><a class="dropdown-item" href="#">Apartments & Flats</a></li>
+        <li><a class="dropdown-item" href="#">Fashion & Beauty</a></li>
+        <li><a class="dropdown-item" href="#">Books</a></li>
+        <li><a class="dropdown-item" href="#">Video-Audios</a></li>
+        <li><a class="dropdown-item" href="#">Animals</a></li>
+        <li><a class="dropdown-item" href="#">Kids Toys</a></li>
+        <li><a class="dropdown-item" href="#">Jewellery</a></li>
+        <li><a class="dropdown-item" href="#">Mackup Products</a></li>
+        <li><a class="dropdown-item" href="#">Cars Rental</a></li>
+      </ul>
+    </div>
+
+    <!-- Category Links -->
+    <a href="#" class="text-dark text-decoration-none">Mobiles</a>
+    <a href="#" class="text-dark text-decoration-none">Cars</a>
+    <a href="#" class="text-dark text-decoration-none">Motorcycles</a>
+    <a href="#" class="text-dark text-decoration-none">Houses</a>
+    <a href="#" class="text-dark text-decoration-none">TV - Video - Audio</a>
+    <a href="#" class="text-dark text-decoration-none">Tablets</a>
+    <a href="#" class="text-dark text-decoration-none">Land & Plots</a>
+
+  </div>
+</div>
+
+     <!-- OLX-style slider -->
+<div class="container-fluid px-4 my-3">
+  <div id="olxCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.olx.com.pk/thumbnails/552893081-800x600.webp" class="d-block w-100" alt="Ad 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.olx.com.pk/thumbnails/552893081-800x600.webp" class="d-block w-100" alt="Ad 2">
+      </div>
+    </div>
+
+    <!-- Optional navigation arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#olxCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#olxCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Featured Categories Section -->
+<div class="container-fluid px-4 my-4">
+  <div class="row text-center g-3">
+
+    <!-- Category 1 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/mobile img.png" width="80" alt="Mobiles">
+        <p class="mt-2 small fw-bold">Mobiles</p>
+      </a>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/vehicle img.png" width="80" alt="Vehicles">
+        <p class="mt-2 small fw-bold">Vehicles</p>
+      </a>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/property img.png" width="80" alt="Property">
+        <p class="mt-2 small fw-bold">Property for Sale</p>
+      </a>
+    </div>
+
+    <!-- Category 4 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/property rent img.png" width="80" alt="Rent">
+        <p class="mt-2 small fw-bold">Property for Rent</p>
+      </a>
+    </div>
+
+    <!-- Category 5 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/electronics img.png" width="80" alt="Electronics">
+        <p class="mt-2 small fw-bold">Electronics</p>
+      </a>
+    </div>
+
+    <!-- Category 6 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/bikes img.png" width="80" alt="Bikes">
+        <p class="mt-2 small fw-bold">Bikes</p>
+      </a>
+    </div>
+
+    <!-- Category 7 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/business img.png" width="80" alt="Business">
+        <p class="mt-2 small fw-bold">Business & Industrial</p>
+      </a>
+    </div>
+
+    <!-- Category 8 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/services img.png" width="80" alt="Services">
+        <p class="mt-2 small fw-bold">Services</p>
+      </a>
+    </div>
+
+    <!-- Category 9 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/jobs img.png" width="80" alt="Jobs">
+        <p class="mt-2 small fw-bold">Jobs</p>
+      </a>
+    </div>
+
+    <!-- Category 10 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/animals img.png" width="80" alt="Animals">
+        <p class="mt-2 small fw-bold">Animals</p>
+      </a>
+    </div>
+
+    <!-- Category 11 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/furniture img.png" width="80" alt="Furniture & Home decor">
+        <p class="mt-2 small fw-bold">Furniture & Home Decor</p>
+      </a>
+    </div>
+
+    <!-- Category 12 -->
+    <div class="col-4 col-sm-3 col-md-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <img src="assets/fashion-beauty img.png" width="80" alt="Fashion & Beauty">
+        <p class="mt-2 small fw-bold">Fashion & Beauty</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Mobile Phone Section -->
+  <div class="container-fluid px-4 my-4">
+  <h2 class="fw-bold fs-4 mb-3">Mobile Phones</h2>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/553102237-800x600.webp" class="card-img-top" alt="Mobile">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 76,000</h5>
+          <p class="card-text mb-1">Iphone 13 Non Pta</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Mumtazabad, Multan
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/550728272-800x600.webp" class="card-img-top" alt="Mobile">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 1.88 Lac</h5>
+          <p class="card-text mb-1">Galaxy S24 Ultra - 256GB - 12GB RAM - non pta Full Genuine</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Budhla Sannat, Multan
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/552229819-800x600.webp" class="card-img-top" alt="Mobile">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 97,000</h5>
+          <p class="card-text mb-1">Iphone 12 Pta Approved 128gb</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Saddar, Karachi
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/553597598-800x600.webp" class="card-img-top" alt="Mobile">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 1.30 Lac</h5>
+          <p class="card-text mb-1">Samsung S24Ultra/Samsung A36/Samsung S25Ultra/Samsung A55 /Samsung A56</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Gulgasht Colony, Multan
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Cars Section -->
+<div class="container-fluid px-4 my-4">
+  <h2 class="fw-bold fs-4 mb-3">Cars</h2>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/553607725-800x600.webp" class="card-img-top" alt="Cars">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 36.50 Lacs</h5>
+          <p class="card-text mb-1">Honda city 1.3 2018</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Saddar, Karachi
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/549905114-800x600.webp" class="card-img-top" alt="Cars">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 63.50 Lacs</h5>
+          <p class="card-text mb-1">Toyota Raize Z 2020</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Kakul Road, Abbottabad
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/552429668-800x600.webp" class="card-img-top" alt="Cars">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  48.50 Lacs</h5>
+          <p class="card-text mb-1">Toyota Corolla Gli 2020 auto</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Johar Town, Lahore
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/549344878-800x600.webp" class="card-img-top" alt="Cars">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 1.30 Crore</h5>
+          <p class="card-text mb-1">KIA Carnival Executive 2021</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Falaknaz Plaza, Karach
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Houses Section -->
+<div class="container-fluid px-4 my-4">
+  <h2 class="fw-bold fs-4 mb-3">Houses</h2>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/549694515-800x600.webp" class="card-img-top" alt="Houses">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 2.25 Crore</h5>
+          <p class="card-text mb-1">Bahria Town, Phase 8, Safari Valley, Ali Block 5 Marla Designer House Boulevard</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Bahria Town Phase 8 - Ali Block, Rawalpindi
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/548340234-800x600.webp" class="card-img-top" alt="Houses">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 3 Crore</h5>
+          <p class="card-text mb-1">4.5 Marla gar ha paris road New home total ready</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Paris Road, Sialkot
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/551965746-800x600.webp" class="card-img-top" alt="Houses">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  5 Crore</h5>
+          <p class="card-text mb-1">8 Kanal Farmhouse For Sale in Le Green Society, Bedian Road Lahore | Swimming Pool & Lush Lawn</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Bedian Road, Lahore
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/551462465-800x600.webp" class="card-img-top" alt="Houses">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  2.20 Crore</h5>
+          <p class="card-text mb-1">5 Marla luxury house for sale located at warsak road sufyan garden . peshawar</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Sufiyan Garden, Peshawar
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Video-Audios Section  -->
+<div class="container-fluid px-4 my-4">
+  <h2 class="fw-bold fs-4 mb-3">Mobile Phones</h2>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/469253039-800x600.webp" class="card-img-top" alt="Video-Audios">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  90,000</h5>
+          <p class="card-text mb-1">Audio Video Conference Logitech Poly Aver Yealink USB MIC Conferencing</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          G-10, Islamabad
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/552709799-800x600.webp" class="card-img-top" alt="Video-Audios">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs Rs 65,000</h5>
+          <p class="card-text mb-1">SONY MHC-V44D</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          West Garden, Karachi
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/552628889-800x600.webp" class="card-img-top" alt="Video-Audios">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 5 Lac</h5>
+          <p class="card-text mb-1">Your Dream Cinema at Home – Delivered to Perfection</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          F-6 Markaz, Islamabad
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/553384300-800x600.webp" class="card-img-top" alt="Video-Audios">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  50,000</h5>
+          <p class="card-text mb-1">High-Quality Car Speakers - Perfect Sound Performance</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Faisal Town, Lahore
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Tablets Section  -->
+<div class="container-fluid px-4 my-4">
+  <h2 class="fw-bold fs-4 mb-3">Tablets</h2>
+
+  <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/550240872-800x600.webp" class="card-img-top" alt="Tablets">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 1.42 Lac</h5>
+          <p class="card-text mb-1">Apple iPad Mini 7 / 7th Generation / A17 Pro Chip / 128GB</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Gulberg 3, Lahore
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/512787051-800x600.webp" class="card-img-top" alt="Tablets">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs  9,999</h5>
+          <p class="card-text mb-1">Samsung Galaxy tab A7 lite for Sale in Karachi - Unused Condition</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Gulshan-e-Iqbal Town, Karachi
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/542602250-800x600.webp" class="card-img-top" alt="Tablets">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 29,999</h5>
+          <p class="card-text mb-1">Special New Year Offer. APPLE IPAD 5TH. 6TH. 7TH GEN 32GB. 5 in 1 Deal</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          Hall Road, Lahore
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card border h-100 shadow-sm position-relative">
+        <button class="position-absolute top-0 end-0 m-2 btn btn-light p-1 rounded-circle shadow-sm border">
+          <i class="bi bi-heart"></i>
+        </button>
+        <img src="https://images.olx.com.pk/thumbnails/515837415-800x600.webp" class="card-img-top" alt="Tablets">
+        <div class="card-body p-2">
+          <h5 class="card-title fw-bold mb-1">Rs 25,000</h5>
+          <p class="card-text mb-1">Samsung tab A7lite box pack contact me for more models</p>
+        </div>
+        <div class="card-footer bg-white border-top-0 text-muted small px-2">
+          GT Road, Gujranwala
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5 text-white">
+  <div class="container-fluid px-4 py-5 bg-dark">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+
+      <!-- Column 1 -->
+      <div class="col">
+        <h5 class="text-uppercase mb-3">Popular Categories</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Cars</a></li>
+          <li><a href="#" class="footer-link">Flats for rent</a></li>
+          <li><a href="#" class="footer-link">Mobile Phones</a></li>
+          <li><a href="#" class="footer-link">Jobs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col">
+        <h5 class="text-uppercase mb-3">Trending Searches</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Bikes</a></li>
+          <li><a href="#" class="footer-link">Watches</a></li>
+          <li><a href="#" class="footer-link">Books</a></li>
+          <li><a href="#" class="footer-link">Dogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col">
+        <h5 class="text-uppercase mb-3">About Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">About Dubizzle Group</a></li>
+          <li><a href="#" class="footer-link">OLX Blog</a></li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+          <li><a href="#" class="footer-link">OLX for Businesses</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col">
+        <h5 class="text-uppercase mb-3">OLX</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Help</a></li>
+          <li><a href="#" class="footer-link">Sitemap</a></li>
+          <li><a href="#" class="footer-link">Terms of use</a></li>
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        </ul>
+        <div class="text-center mt-4">
+  <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">
+    <i class="bi bi-arrow-up"></i>
+  </button> 
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center py-3 bg-secondary text-white small">
+    Free Classifieds in Pakistan. © 2006-2025 OLX
+  </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    
+    <script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+        
+</body>
+</html>
