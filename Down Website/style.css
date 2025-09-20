@@ -1,0 +1,84 @@
+/* Custom navbar styling */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.custom-navbar {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff3b3b;
+}
+
+.mb-3 {
+    color: linear-gradient(90deg, #A734BD 0%, #FF006A 100%); !important
+    font-family: Clash Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 70px;
+    line-height: 76px;
+    letter-spacing: 0px;
+}
+
+.lead {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    background: #DBDBDB;
+}
+
+.img-fluid {
+    width: 288;
+    height: 582.3340454101562;
+    opacity: 1;
+    top: 168px;
+    left: 328px;
+}
+
+.about-section {
+    width: 1200;
+    height: 220;
+    opacity: 1;
+    top: 874px;
+    left: 120px;
+    border-radius: 36px;
+    border-width: 1px;
+}
+
+.counter {
+    color: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    font-family: Clash Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.about-section>p {
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+}
