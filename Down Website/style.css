@@ -1,6 +1,13 @@
-/* Custom navbar styling */
+body {
+    background-color: #000;     
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -25,60 +32,157 @@
 }
 
 .mb-3 {
-    color: linear-gradient(90deg, #A734BD 0%, #FF006A 100%); !important
-    font-family: Clash Display;
+    font-family: 'Clash Display', sans-serif;
     font-weight: 700;
-    font-style: Bold;
     font-size: 70px;
     line-height: 76px;
-    letter-spacing: 0px;
+    text-align: center;
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 
 .lead {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
     line-height: 28px;
-    letter-spacing: 0px;
-    background: #DBDBDB;
+    color: #DBDBDB;  
+    text-align: center;
 }
 
+
 .img-fluid {
-    width: 288;
-    height: 582.3340454101562;
-    opacity: 1;
-    top: 168px;
-    left: 328px;
+    width: 288px;
+    height: auto;      
+    display: block;
+    margin: 0 auto;
 }
 
 .about-section {
-    width: 1200;
-    height: 220;
-    opacity: 1;
-    top: 874px;
-    left: 120px;
+    width: 100%;
+    max-width: 1200px;
+    background: #111;
     border-radius: 36px;
-    border-width: 1px;
+    padding: 40px;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #333;
 }
 
 .counter {
-    color: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
-    font-family: Clash Display;
+    font-family: 'Clash Display', sans-serif;
     font-weight: 700;
-    font-style: Bold;
     font-size: 50px;
     line-height: 56px;
-    letter-spacing: 0px;
-    text-align: center;
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.about-section>p {
-    font-family: Poppins;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
+
+.about-section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #DBDBDB;
+    margin-top: 10px;
+}
+
+/* Cards */
+.features-section {
+    background: #000;     
+    color: #fff;
+    padding: 60px 0;
+}
+
+.features-section .container {
+    width: 90%;           
+    max-width: 1200px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin: 0 auto;
+}
+
+.features-section .section-title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    background: linear-gradient(90deg,#A734BD 0%,#FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+.features-section .row {
+    --bs-gutter-x: 0;
+}
+
+.features-section .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+    padding: 40px 20px;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-card h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #DBDBDB;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.card-icon {
+    width: 70px;
+    height: auto;
+}
+
+.image-text-section {
+    background: #000;            /* match site body */
+    color: #DBDBDB;
+}
+
+/* ✍️ Heading Style */
+.image-text-section .section-heading {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    background: linear-gradient(90deg,#A734BD 0%,#FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-text-section .section-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* 📱 Image Responsive tweaks */
+.side-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;   /* optional */
 }
