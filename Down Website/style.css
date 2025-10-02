@@ -1,8 +1,8 @@
 :root {
-    --down-dark: #0f0b14; /* Deep dark background */
-    --down-pink: #ff1493; /* Bright Pink for accents */
-    --down-purple: #8a2be2; /* Bright Purple for accents */
-    --down-heading: #ff6a80; /* Pinkish-Red color for main titles */
+    --down-dark: #0f0b14; 
+    --down-pink: #ff1493; 
+    --down-purple: #8a2be2; 
+    --down-heading: #ff6a80; 
 }
 
 /* Global */
@@ -34,8 +34,7 @@ body {
         circle at 50% 10%, 
         rgba(138, 43, 226, 0.25) 0%, 
         rgba(255, 20, 147, 0.2) 15%, 
-        rgba(15, 11, 20, 1) 40%
-    );
+        rgba(15, 11, 20, 1) 40%) !important;
 }
 .hero-title { 
     font-size: 3.5rem; 
@@ -46,7 +45,6 @@ body {
 /* Gradient Text */
 .text-gradient {
     background: linear-gradient(to right, var(--down-purple), var(--down-pink));
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
