@@ -23,6 +23,9 @@ body {
     font-size: 1.8rem;
     font-weight: 900;
     color: white;
+    width: 1440;
+    height: 112;
+    opacity: 1;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--down-text-muted);
