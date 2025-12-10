@@ -12,21 +12,28 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3" style="z-index: 1050;">
             <div class="container">
-                <a class="navbar-brand down-logo" href="#"><img src="assets/Login.svg" alt=""></a> 
+                <a class="navbar-brand down-logo fw-bold" href="#">DOWN</a> 
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Dating Advice</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">DOWN Wiki</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     </ul>
+                    
+                    <div class="d-flex align-items-center ms-lg-3">
+                         <a href="#" class="btn btn-outline-light d-none d-lg-block btn-login-custom me-3">Log In</a>
+                         <a href="#" class="btn btn-primary btn-sm px-3 rounded-pill btn-get-started">Get Started</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -179,13 +186,14 @@
 
         <h4 class="title-red mt-5 mb-4">Press</h4>
         <div class="press-logo-box text-center py-4 px-3 mx-auto">
-            <div class="row justify-content-center align-items-center g-4">
-                <div class="col-4 col-md-2 col-lg-1"><img src="assets/images.png" alt="Mashable" class="img-fluid"></div>
-            </div>
+            
+            <img src="assets/images.png" alt="Featured In Press Logos" class="img-fluid single-press-image">
+            
         </div>
-        <p class="text-muted mt-4">
+        
+        <p class="text-white-75 mt-4">
             Want To Read Some More Down Dating App Reviews?
-            <a href="#" class="text-gradient text-decoration-none">More Press For The Curious.</a>
+            <a href="#" class="text-gradient text-decoration-none fw-bold">More Press For The Curious.</a>
         </p>
     </section>
 
